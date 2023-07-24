@@ -19,15 +19,17 @@ Packages installed within the proof of concept are listed in the packages file. 
    TBD
 5) Make sure to build ther kernel, cpio, and grub with EFI support within the chroot
 
-6)  BACKUP the chroot before proceeding
+6) Delete /etc/fstab (the initrd will mounting root)
 
-7)  Change the name of the kernel image in /boot to match this format vmlinuz-$KERNEL_VER ie vmlinuz-6.4.4, DO NOT install an initrd. 
+7)  BACKUP the chroot before proceeding
 
-8) Change the paths and kernel version in the make-iso.sh script
+8)  Change the name of the kernel image in /boot to match this format vmlinuz-$KERNEL_VER ie vmlinuz-6.4.4, DO NOT install an initrd. 
 
-9) Run the make-iso.sh script
+9) Change the paths and kernel version in the make-iso.sh script
 
-10) Verify that everything went well and attempt to boot the ISO within QEMU.
+10) Run the make-iso.sh script
+
+11) Verify that everything went well and attempt to boot the ISO within QEMU.
 
 
 ## Notes: 
