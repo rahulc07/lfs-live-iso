@@ -5,8 +5,14 @@ Packages installed within the proof of concept are listed in the packages file. 
   This ISO is compatible with both EFI and BIOS Legacy Bios boot.
 
 **A Live ISO Guide/Build Script for Linux From Scratch**
+
+
+# Known Problems
+For some reason, the initramfs is 343 MB so you might have to give it a minute to load the initrd.  I didn't have time to look further into it but this is on the top of the list 
+
 ## Build Instructions: 
 **This is a preamble before the full hand built ISO instructions are written**
+
 1) Build an LFS system (sysv or systemd) and continue as far as you want with BLFS in a chroot.  (This can be done with jhalfs or by hand)  
 
 2) Rebuild libffi to work with any x86_64 CPU by running the configure with the march CFLAG.  
