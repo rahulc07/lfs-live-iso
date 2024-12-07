@@ -19,7 +19,7 @@ FIRMWARE_VERSION="20230625"
 KERNEL_VER=6.4.4
 cd $TEMP_DIR
 # Install Linux Firmware
-wget https://cdn.kernel.org/pub/linux/kernel/firmware/linux-firmware-20230625.tar.xz
+wget https://cdn.kernel.org/pub/linux/kernel/firmware/linux-firmware-$FIRMWARE_VERSION.tar.xz
 tar -xvf linux-firmware-$FIRMWARE_VERSION.tar.xz
 cd linux-firmware-$FIRMWARE_VERSION
 # Install the compressed firmware files (needs support in kernel)
